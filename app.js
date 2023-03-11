@@ -6,6 +6,7 @@ window.onload = function() {
 
 
     var result = document.getElementById("result");
+    result.innerHTML = "<p>loading</p>"
     var Input = document.getElementById("SuperHeroes").value.replace(/[-&\/\\#,+()$@|~%!.'":;*?<>{}]/g,'');
     
     fetch(`http://localhost:8888/info2180-lab4/superheroes.php?query= ${Input}`, {method : 'GET'})
